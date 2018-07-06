@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F59E195388D20070C39A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* AppDelegate.m */; };
+		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		CE538B161E7FF81D00E99396 /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538AD81E7FF81D00E99396 /* AppConstants.m */; };
+		CE538B171E7FF81D00E99396 /* ColorSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538ADC1E7FF81D00E99396 /* ColorSettingsView.m */; };
+		CE538B181E7FF81D00E99396 /* ColorSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE538ADD1E7FF81D00E99396 /* ColorSettingsView.xib */; };
+		CE538B191E7FF81D00E99396 /* ColorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538AE11E7FF81D00E99396 /* ColorSlider.m */; };
+		CE538B1A1E7FF81D00E99396 /* GeneralSettingsSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538AE41E7FF81D00E99396 /* GeneralSettingsSlider.m */; };
+		CE538B1B1E7FF81D00E99396 /* ColorSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538AE81E7FF81D00E99396 /* ColorSliderTableViewCell.m */; };
+		CE538B1C1E7FF81D00E99396 /* ColorSliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE538AE91E7FF81D00E99396 /* ColorSliderTableViewCell.xib */; };
+		CE538B1D1E7FF81D00E99396 /* EqualizerTypeListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538AEC1E7FF81D00E99396 /* EqualizerTypeListTableViewCell.m */; };
+		CE538B1E1E7FF81D00E99396 /* EqualizerTypeListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE538AED1E7FF81D00E99396 /* EqualizerTypeListTableViewCell.xib */; };
+		CE538B1F1E7FF81D00E99396 /* GeneralSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538AF01E7FF81D00E99396 /* GeneralSliderTableViewCell.m */; };
+		CE538B201E7FF81D00E99396 /* GeneralSliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE538AF11E7FF81D00E99396 /* GeneralSliderTableViewCell.xib */; };
+		CE538B211E7FF81D00E99396 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538AF41E7FF81D00E99396 /* MainTableViewCell.m */; };
+		CE538B221E7FF81D00E99396 /* ColorSettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538AF81E7FF81D00E99396 /* ColorSettingsTableViewCell.m */; };
+		CE538B231E7FF81D00E99396 /* ColorSettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE538AF91E7FF81D00E99396 /* ColorSettingsTableViewCell.xib */; };
+		CE538B241E7FF81D00E99396 /* SettingsMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538AFC1E7FF81D00E99396 /* SettingsMenuTableViewCell.m */; };
+		CE538B251E7FF81D00E99396 /* SettingsMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE538AFD1E7FF81D00E99396 /* SettingsMenuTableViewCell.xib */; };
+		CE538B261E7FF81D00E99396 /* GeneralSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538B001E7FF81D00E99396 /* GeneralSettingsView.m */; };
+		CE538B271E7FF81D00E99396 /* GeneralSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE538B011E7FF81D00E99396 /* GeneralSettingsView.xib */; };
+		CE538B281E7FF81D00E99396 /* SettingsMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538B041E7FF81D00E99396 /* SettingsMenuView.m */; };
+		CE538B291E7FF81D00E99396 /* SettingsMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE538B051E7FF81D00E99396 /* SettingsMenuView.xib */; };
+		CE538B2A1E7FF81D00E99396 /* ColorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538B081E7FF81D00E99396 /* ColorItem.m */; };
+		CE538B2B1E7FF81D00E99396 /* Equalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538B0A1E7FF81D00E99396 /* Equalizer.m */; };
+		CE538B2C1E7FF81D00E99396 /* GeneralSettingsMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538B0C1E7FF81D00E99396 /* GeneralSettingsMenuItem.m */; };
+		CE538B2D1E7FF81D00E99396 /* SettingsMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538B0E1E7FF81D00E99396 /* SettingsMenuItem.m */; };
+		CE538B2E1E7FF81D00E99396 /* EqualizerTypeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538B111E7FF81D00E99396 /* EqualizerTypeListViewController.m */; };
+		CE538B2F1E7FF81D00E99396 /* EqualizerTypeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE538B121E7FF81D00E99396 /* EqualizerTypeListViewController.xib */; };
+		CE538B301E7FF81D00E99396 /* PlayRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE538B141E7FF81D00E99396 /* PlayRecordViewController.m */; };
+		CE538B311E7FF81D00E99396 /* PlayRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE538B151E7FF81D00E99396 /* PlayRecordViewController.xib */; };
+		CE538B331E7FF95200E99396 /* audio2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE538B321E7FF95200E99396 /* audio2.mp3 */; };
+		D917155920EF888900C721D4 /* libDisPlayers-Audio-Visualizers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D917155820EF888900C721D4 /* libDisPlayers-Audio-Visualizers.a */; };
+		D917155B20EF888C00C721D4 /* libTPCircularBuffer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D917155A20EF888C00C721D4 /* libTPCircularBuffer.a */; };
+		D917155D20EF888F00C721D4 /* libEZAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D917155C20EF888F00C721D4 /* libEZAudio.a */; };
+		D917155F20EF8C8900C721D4 /* libPods-Audio Visulizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D917155E20EF8C8900C721D4 /* libPods-Audio Visulizer.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02AB84E32E1824DEF3257F09 /* Pods-Audio Visulizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Visulizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Audio Visulizer/Pods-Audio Visulizer.release.xcconfig"; sourceTree = "<group>"; };
+		11FFC43FFE956A69172B7ECB /* Pods-Audio Visulizer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Visulizer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audio Visulizer_Example/Pods-Audio Visulizer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2E18952FC7E9BCACC9D7B465 /* Pods_DisPlayers_Audio_Visualizers_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisPlayers_Audio_Visualizers_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* Audio Visulizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio Visulizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F595195388D20070C39A /* Audio Visulizer.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Audio Visulizer.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
+		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* Audio Visulizer.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Audio Visulizer.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EE550464BE27806B88279BF /* Pods-Audio Visulizer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Visulizer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Audio Visulizer_Example/Pods-Audio Visulizer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A005EC1E917F951ED84ECE43 /* Pods-Audio Visulizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Visulizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audio Visulizer/Pods-Audio Visulizer.debug.xcconfig"; sourceTree = "<group>"; };
+		CE538AD71E7FF81D00E99396 /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		CE538AD81E7FF81D00E99396 /* AppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstants.m; sourceTree = "<group>"; };
+		CE538ADB1E7FF81D00E99396 /* ColorSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorSettingsView.h; sourceTree = "<group>"; };
+		CE538ADC1E7FF81D00E99396 /* ColorSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorSettingsView.m; sourceTree = "<group>"; };
+		CE538ADD1E7FF81D00E99396 /* ColorSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorSettingsView.xib; sourceTree = "<group>"; };
+		CE538AE01E7FF81D00E99396 /* ColorSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorSlider.h; sourceTree = "<group>"; };
+		CE538AE11E7FF81D00E99396 /* ColorSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorSlider.m; sourceTree = "<group>"; };
+		CE538AE31E7FF81D00E99396 /* GeneralSettingsSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralSettingsSlider.h; sourceTree = "<group>"; };
+		CE538AE41E7FF81D00E99396 /* GeneralSettingsSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralSettingsSlider.m; sourceTree = "<group>"; };
+		CE538AE71E7FF81D00E99396 /* ColorSliderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorSliderTableViewCell.h; sourceTree = "<group>"; };
+		CE538AE81E7FF81D00E99396 /* ColorSliderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorSliderTableViewCell.m; sourceTree = "<group>"; };
+		CE538AE91E7FF81D00E99396 /* ColorSliderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorSliderTableViewCell.xib; sourceTree = "<group>"; };
+		CE538AEB1E7FF81D00E99396 /* EqualizerTypeListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualizerTypeListTableViewCell.h; sourceTree = "<group>"; };
+		CE538AEC1E7FF81D00E99396 /* EqualizerTypeListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualizerTypeListTableViewCell.m; sourceTree = "<group>"; };
+		CE538AED1E7FF81D00E99396 /* EqualizerTypeListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EqualizerTypeListTableViewCell.xib; sourceTree = "<group>"; };
+		CE538AEF1E7FF81D00E99396 /* GeneralSliderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralSliderTableViewCell.h; sourceTree = "<group>"; };
+		CE538AF01E7FF81D00E99396 /* GeneralSliderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralSliderTableViewCell.m; sourceTree = "<group>"; };
+		CE538AF11E7FF81D00E99396 /* GeneralSliderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneralSliderTableViewCell.xib; sourceTree = "<group>"; };
+		CE538AF31E7FF81D00E99396 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		CE538AF41E7FF81D00E99396 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		CE538AF71E7FF81D00E99396 /* ColorSettingsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorSettingsTableViewCell.h; sourceTree = "<group>"; };
+		CE538AF81E7FF81D00E99396 /* ColorSettingsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorSettingsTableViewCell.m; sourceTree = "<group>"; };
+		CE538AF91E7FF81D00E99396 /* ColorSettingsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorSettingsTableViewCell.xib; sourceTree = "<group>"; };
+		CE538AFB1E7FF81D00E99396 /* SettingsMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsMenuTableViewCell.h; sourceTree = "<group>"; };
+		CE538AFC1E7FF81D00E99396 /* SettingsMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsMenuTableViewCell.m; sourceTree = "<group>"; };
+		CE538AFD1E7FF81D00E99396 /* SettingsMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsMenuTableViewCell.xib; sourceTree = "<group>"; };
+		CE538AFF1E7FF81D00E99396 /* GeneralSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralSettingsView.h; sourceTree = "<group>"; };
+		CE538B001E7FF81D00E99396 /* GeneralSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralSettingsView.m; sourceTree = "<group>"; };
+		CE538B011E7FF81D00E99396 /* GeneralSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneralSettingsView.xib; sourceTree = "<group>"; };
+		CE538B031E7FF81D00E99396 /* SettingsMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsMenuView.h; sourceTree = "<group>"; };
+		CE538B041E7FF81D00E99396 /* SettingsMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsMenuView.m; sourceTree = "<group>"; };
+		CE538B051E7FF81D00E99396 /* SettingsMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsMenuView.xib; sourceTree = "<group>"; };
+		CE538B071E7FF81D00E99396 /* ColorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorItem.h; sourceTree = "<group>"; };
+		CE538B081E7FF81D00E99396 /* ColorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorItem.m; sourceTree = "<group>"; };
+		CE538B091E7FF81D00E99396 /* Equalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Equalizer.h; sourceTree = "<group>"; };
+		CE538B0A1E7FF81D00E99396 /* Equalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Equalizer.m; sourceTree = "<group>"; };
+		CE538B0B1E7FF81D00E99396 /* GeneralSettingsMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralSettingsMenuItem.h; sourceTree = "<group>"; };
+		CE538B0C1E7FF81D00E99396 /* GeneralSettingsMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralSettingsMenuItem.m; sourceTree = "<group>"; };
+		CE538B0D1E7FF81D00E99396 /* SettingsMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsMenuItem.h; sourceTree = "<group>"; };
+		CE538B0E1E7FF81D00E99396 /* SettingsMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsMenuItem.m; sourceTree = "<group>"; };
+		CE538B101E7FF81D00E99396 /* EqualizerTypeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualizerTypeListViewController.h; sourceTree = "<group>"; };
+		CE538B111E7FF81D00E99396 /* EqualizerTypeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualizerTypeListViewController.m; sourceTree = "<group>"; };
+		CE538B121E7FF81D00E99396 /* EqualizerTypeListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EqualizerTypeListViewController.xib; sourceTree = "<group>"; };
+		CE538B131E7FF81D00E99396 /* PlayRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayRecordViewController.h; sourceTree = "<group>"; };
+		CE538B141E7FF81D00E99396 /* PlayRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayRecordViewController.m; sourceTree = "<group>"; };
+		CE538B151E7FF81D00E99396 /* PlayRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayRecordViewController.xib; sourceTree = "<group>"; };
+		CE538B321E7FF95200E99396 /* audio2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio2.mp3; sourceTree = "<group>"; };
+		D917155620EF888500C721D4 /* libPods-Audio Visulizer_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-Audio Visulizer_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D917155820EF888900C721D4 /* libDisPlayers-Audio-Visualizers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libDisPlayers-Audio-Visualizers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D917155A20EF888C00C721D4 /* libTPCircularBuffer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTPCircularBuffer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D917155C20EF888F00C721D4 /* libEZAudio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libEZAudio.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D917155E20EF8C8900C721D4 /* libPods-Audio Visulizer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-Audio Visulizer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E82786357A01D7F9F623B231 /* libPods-Audio Visulizer_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Audio Visulizer_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF502AE5B024BE63A4EC0B95 /* Pods_DisPlayers_Audio_Visualizers_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisPlayers_Audio_Visualizers_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D917155F20EF8C8900C721D4 /* libPods-Audio Visulizer.a in Frameworks */,
+				D917155D20EF888F00C721D4 /* libEZAudio.a in Frameworks */,
+				D917155B20EF888C00C721D4 /* libTPCircularBuffer.a in Frameworks */,
+				D917155920EF888900C721D4 /* libDisPlayers-Audio-Visualizers.a in Frameworks */,
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				6003F593195388D20070C39A /* Audio Visulizer */,
+				6003F5B5195388D20070C39A /* Tests */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				8F417286AB24386934B7BE29 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* Audio Visulizer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D917155E20EF8C8900C721D4 /* libPods-Audio Visulizer.a */,
+				D917155C20EF888F00C721D4 /* libEZAudio.a */,
+				D917155A20EF888C00C721D4 /* libTPCircularBuffer.a */,
+				D917155820EF888900C721D4 /* libDisPlayers-Audio-Visualizers.a */,
+				D917155620EF888500C721D4 /* libPods-Audio Visulizer_Example.a */,
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				FF502AE5B024BE63A4EC0B95 /* Pods_DisPlayers_Audio_Visualizers_Example.framework */,
+				2E18952FC7E9BCACC9D7B465 /* Pods_DisPlayers_Audio_Visualizers_Tests.framework */,
+				E82786357A01D7F9F623B231 /* libPods-Audio Visulizer_Example.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* Audio Visulizer */ = {
+			isa = PBXGroup;
+			children = (
+				CE538AD61E7FF81D00E99396 /* Constants */,
+				CE538AD91E7FF81D00E99396 /* CustomViews */,
+				CE538B061E7FF81D00E99396 /* Models */,
+				CE538B0F1E7FF81D00E99396 /* ViewControllers */,
+				6003F59C195388D20070C39A /* AppDelegate.h */,
+				6003F59D195388D20070C39A /* AppDelegate.m */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				CE538B321E7FF95200E99396 /* audio2.mp3 */,
+				6003F594195388D20070C39A /* Supporting Files */,
+			);
+			name = "Audio Visulizer";
+			path = "DisPlayers-Audio-Visualizers";
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F595195388D20070C39A /* Audio Visulizer.temp_caseinsensitive_rename-Info.plist */,
+				6003F596195388D20070C39A /* InfoPlist.strings */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* Audio Visulizer.temp_caseinsensitive_rename-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6003F5B5195388D20070C39A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5BB195388D20070C39A /* Tests.m */,
+				6003F5B6195388D20070C39A /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6003F5B6195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5B7195388D20070C39A /* Tests-Info.plist */,
+				6003F5B8195388D20070C39A /* InfoPlist.strings */,
+				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F417286AB24386934B7BE29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11FFC43FFE956A69172B7ECB /* Pods-Audio Visulizer_Example.debug.xcconfig */,
+				9EE550464BE27806B88279BF /* Pods-Audio Visulizer_Example.release.xcconfig */,
+				A005EC1E917F951ED84ECE43 /* Pods-Audio Visulizer.debug.xcconfig */,
+				02AB84E32E1824DEF3257F09 /* Pods-Audio Visulizer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE538AD61E7FF81D00E99396 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CE538AD71E7FF81D00E99396 /* AppConstants.h */,
+				CE538AD81E7FF81D00E99396 /* AppConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CE538AD91E7FF81D00E99396 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				CE538ADA1E7FF81D00E99396 /* ColorSettingsView */,
+				CE538ADE1E7FF81D00E99396 /* CustomSliderView */,
+				CE538AE51E7FF81D00E99396 /* CustomTableViewCells */,
+				CE538AFE1E7FF81D00E99396 /* GeneralSettingsView */,
+				CE538B021E7FF81D00E99396 /* SettingsMenuView */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		CE538ADA1E7FF81D00E99396 /* ColorSettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				CE538ADB1E7FF81D00E99396 /* ColorSettingsView.h */,
+				CE538ADC1E7FF81D00E99396 /* ColorSettingsView.m */,
+				CE538ADD1E7FF81D00E99396 /* ColorSettingsView.xib */,
+			);
+			path = ColorSettingsView;
+			sourceTree = "<group>";
+		};
+		CE538ADE1E7FF81D00E99396 /* CustomSliderView */ = {
+			isa = PBXGroup;
+			children = (
+				CE538ADF1E7FF81D00E99396 /* ColorSlider */,
+				CE538AE21E7FF81D00E99396 /* GeneralSettingsSlider */,
+			);
+			path = CustomSliderView;
+			sourceTree = "<group>";
+		};
+		CE538ADF1E7FF81D00E99396 /* ColorSlider */ = {
+			isa = PBXGroup;
+			children = (
+				CE538AE01E7FF81D00E99396 /* ColorSlider.h */,
+				CE538AE11E7FF81D00E99396 /* ColorSlider.m */,
+			);
+			path = ColorSlider;
+			sourceTree = "<group>";
+		};
+		CE538AE21E7FF81D00E99396 /* GeneralSettingsSlider */ = {
+			isa = PBXGroup;
+			children = (
+				CE538AE31E7FF81D00E99396 /* GeneralSettingsSlider.h */,
+				CE538AE41E7FF81D00E99396 /* GeneralSettingsSlider.m */,
+			);
+			path = GeneralSettingsSlider;
+			sourceTree = "<group>";
+		};
+		CE538AE51E7FF81D00E99396 /* CustomTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CE538AE61E7FF81D00E99396 /* ColorSliderTableViewCell */,
+				CE538AEA1E7FF81D00E99396 /* EqualizerTypeListTableViewCell */,
+				CE538AEE1E7FF81D00E99396 /* GeneralSliderTableViewCell */,
+				CE538AF21E7FF81D00E99396 /* MainTableViewCell */,
+				CE538AF51E7FF81D00E99396 /* SettingsMenuTableViewCells */,
+			);
+			path = CustomTableViewCells;
+			sourceTree = "<group>";
+		};
+		CE538AE61E7FF81D00E99396 /* ColorSliderTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE538AE71E7FF81D00E99396 /* ColorSliderTableViewCell.h */,
+				CE538AE81E7FF81D00E99396 /* ColorSliderTableViewCell.m */,
+				CE538AE91E7FF81D00E99396 /* ColorSliderTableViewCell.xib */,
+			);
+			path = ColorSliderTableViewCell;
+			sourceTree = "<group>";
+		};
+		CE538AEA1E7FF81D00E99396 /* EqualizerTypeListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE538AEB1E7FF81D00E99396 /* EqualizerTypeListTableViewCell.h */,
+				CE538AEC1E7FF81D00E99396 /* EqualizerTypeListTableViewCell.m */,
+				CE538AED1E7FF81D00E99396 /* EqualizerTypeListTableViewCell.xib */,
+			);
+			path = EqualizerTypeListTableViewCell;
+			sourceTree = "<group>";
+		};
+		CE538AEE1E7FF81D00E99396 /* GeneralSliderTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE538AEF1E7FF81D00E99396 /* GeneralSliderTableViewCell.h */,
+				CE538AF01E7FF81D00E99396 /* GeneralSliderTableViewCell.m */,
+				CE538AF11E7FF81D00E99396 /* GeneralSliderTableViewCell.xib */,
+			);
+			path = GeneralSliderTableViewCell;
+			sourceTree = "<group>";
+		};
+		CE538AF21E7FF81D00E99396 /* MainTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE538AF31E7FF81D00E99396 /* MainTableViewCell.h */,
+				CE538AF41E7FF81D00E99396 /* MainTableViewCell.m */,
+			);
+			path = MainTableViewCell;
+			sourceTree = "<group>";
+		};
+		CE538AF51E7FF81D00E99396 /* SettingsMenuTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CE538AF61E7FF81D00E99396 /* ColorSettingsTableViewCell */,
+				CE538AFA1E7FF81D00E99396 /* SettingsMenuTableViewCell */,
+			);
+			path = SettingsMenuTableViewCells;
+			sourceTree = "<group>";
+		};
+		CE538AF61E7FF81D00E99396 /* ColorSettingsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE538AF71E7FF81D00E99396 /* ColorSettingsTableViewCell.h */,
+				CE538AF81E7FF81D00E99396 /* ColorSettingsTableViewCell.m */,
+				CE538AF91E7FF81D00E99396 /* ColorSettingsTableViewCell.xib */,
+			);
+			path = ColorSettingsTableViewCell;
+			sourceTree = "<group>";
+		};
+		CE538AFA1E7FF81D00E99396 /* SettingsMenuTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE538AFB1E7FF81D00E99396 /* SettingsMenuTableViewCell.h */,
+				CE538AFC1E7FF81D00E99396 /* SettingsMenuTableViewCell.m */,
+				CE538AFD1E7FF81D00E99396 /* SettingsMenuTableViewCell.xib */,
+			);
+			path = SettingsMenuTableViewCell;
+			sourceTree = "<group>";
+		};
+		CE538AFE1E7FF81D00E99396 /* GeneralSettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				CE538AFF1E7FF81D00E99396 /* GeneralSettingsView.h */,
+				CE538B001E7FF81D00E99396 /* GeneralSettingsView.m */,
+				CE538B011E7FF81D00E99396 /* GeneralSettingsView.xib */,
+			);
+			path = GeneralSettingsView;
+			sourceTree = "<group>";
+		};
+		CE538B021E7FF81D00E99396 /* SettingsMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				CE538B031E7FF81D00E99396 /* SettingsMenuView.h */,
+				CE538B041E7FF81D00E99396 /* SettingsMenuView.m */,
+				CE538B051E7FF81D00E99396 /* SettingsMenuView.xib */,
+			);
+			path = SettingsMenuView;
+			sourceTree = "<group>";
+		};
+		CE538B061E7FF81D00E99396 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE538B071E7FF81D00E99396 /* ColorItem.h */,
+				CE538B081E7FF81D00E99396 /* ColorItem.m */,
+				CE538B091E7FF81D00E99396 /* Equalizer.h */,
+				CE538B0A1E7FF81D00E99396 /* Equalizer.m */,
+				CE538B0B1E7FF81D00E99396 /* GeneralSettingsMenuItem.h */,
+				CE538B0C1E7FF81D00E99396 /* GeneralSettingsMenuItem.m */,
+				CE538B0D1E7FF81D00E99396 /* SettingsMenuItem.h */,
+				CE538B0E1E7FF81D00E99396 /* SettingsMenuItem.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE538B0F1E7FF81D00E99396 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE538B101E7FF81D00E99396 /* EqualizerTypeListViewController.h */,
+				CE538B111E7FF81D00E99396 /* EqualizerTypeListViewController.m */,
+				CE538B121E7FF81D00E99396 /* EqualizerTypeListViewController.xib */,
+				CE538B131E7FF81D00E99396 /* PlayRecordViewController.h */,
+				CE538B141E7FF81D00E99396 /* PlayRecordViewController.m */,
+				CE538B151E7FF81D00E99396 /* PlayRecordViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6003F589195388D20070C39A /* Audio Visulizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "Audio Visulizer" */;
+			buildPhases = (
+				77535A3B9E7EBACB9FA61D9C /* [CP] Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				EC8BC63DE3D8AD338A85945F /* [CP] Embed Pods Frameworks */,
+				DDE50F7CAD990B536809C0E9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Audio Visulizer";
+			productName = "DisPlayers-Audio-Visualizers";
+			productReference = 6003F58A195388D20070C39A /* Audio Visulizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DP;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "liptugamichael@gmail.com";
+				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 3BZ54827F5;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "Audio Visulizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* Audio Visulizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE538B1E1E7FF81D00E99396 /* EqualizerTypeListTableViewCell.xib in Resources */,
+				CE538B1C1E7FF81D00E99396 /* ColorSliderTableViewCell.xib in Resources */,
+				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				CE538B271E7FF81D00E99396 /* GeneralSettingsView.xib in Resources */,
+				CE538B231E7FF81D00E99396 /* ColorSettingsTableViewCell.xib in Resources */,
+				CE538B201E7FF81D00E99396 /* GeneralSliderTableViewCell.xib in Resources */,
+				CE538B181E7FF81D00E99396 /* ColorSettingsView.xib in Resources */,
+				CE538B331E7FF95200E99396 /* audio2.mp3 in Resources */,
+				CE538B2F1E7FF81D00E99396 /* EqualizerTypeListViewController.xib in Resources */,
+				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				CE538B291E7FF81D00E99396 /* SettingsMenuView.xib in Resources */,
+				CE538B251E7FF81D00E99396 /* SettingsMenuTableViewCell.xib in Resources */,
+				CE538B311E7FF81D00E99396 /* PlayRecordViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77535A3B9E7EBACB9FA61D9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Audio Visulizer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDE50F7CAD990B536809C0E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audio Visulizer/Pods-Audio Visulizer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC8BC63DE3D8AD338A85945F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DisPlayers-Audio-Visualizers_Example/Pods-DisPlayers-Audio-Visualizers_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DisPlayers-Audio-Visualizers/DisPlayers_Audio_Visualizers.framework",
+				"${BUILT_PRODUCTS_DIR}/EZAudio/EZAudio.framework",
+				"${BUILT_PRODUCTS_DIR}/TPCircularBuffer/TPCircularBuffer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DisPlayers_Audio_Visualizers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZAudio.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPCircularBuffer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audio Visulizer/Pods-Audio Visulizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE538B171E7FF81D00E99396 /* ColorSettingsView.m in Sources */,
+				CE538B241E7FF81D00E99396 /* SettingsMenuTableViewCell.m in Sources */,
+				CE538B211E7FF81D00E99396 /* MainTableViewCell.m in Sources */,
+				CE538B1F1E7FF81D00E99396 /* GeneralSliderTableViewCell.m in Sources */,
+				CE538B2A1E7FF81D00E99396 /* ColorItem.m in Sources */,
+				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
+				CE538B2B1E7FF81D00E99396 /* Equalizer.m in Sources */,
+				CE538B1B1E7FF81D00E99396 /* ColorSliderTableViewCell.m in Sources */,
+				CE538B261E7FF81D00E99396 /* GeneralSettingsView.m in Sources */,
+				CE538B301E7FF81D00E99396 /* PlayRecordViewController.m in Sources */,
+				CE538B2C1E7FF81D00E99396 /* GeneralSettingsMenuItem.m in Sources */,
+				CE538B2D1E7FF81D00E99396 /* SettingsMenuItem.m in Sources */,
+				CE538B1A1E7FF81D00E99396 /* GeneralSettingsSlider.m in Sources */,
+				CE538B2E1E7FF81D00E99396 /* EqualizerTypeListViewController.m in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+				CE538B281E7FF81D00E99396 /* SettingsMenuView.m in Sources */,
+				CE538B1D1E7FF81D00E99396 /* EqualizerTypeListTableViewCell.m in Sources */,
+				CE538B191E7FF81D00E99396 /* ColorSlider.m in Sources */,
+				CE538B221E7FF81D00E99396 /* ColorSettingsTableViewCell.m in Sources */,
+				CE538B161E7FF81D00E99396 /* AppConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F597195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F5B9195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71719F9E1E33DC2100824A3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A005EC1E917F951ED84ECE43 /* Pods-Audio Visulizer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3BZ54827F5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DisPlayers-Audio-Visualizers/Audio Visulizer.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "DisPlayers-Audio-Visualizers/Audio Visulizer.temp_caseinsensitive_rename-Info.plist";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftstar.demo.Audio-Visulizer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02AB84E32E1824DEF3257F09 /* Pods-Audio Visulizer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3BZ54827F5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DisPlayers-Audio-Visualizers/Audio Visulizer.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "DisPlayers-Audio-Visualizers/Audio Visulizer.temp_caseinsensitive_rename-Info.plist";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftstar.demo.Audio-Visulizer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "Audio Visulizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "Audio Visulizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}
